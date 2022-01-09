@@ -5,4 +5,5 @@ const aNumber = {
   decision: 'not determined'
 }
 
+// eslint-disable-next-line no-console
 console.log({ aNumber })
