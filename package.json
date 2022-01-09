@@ -4,6 +4,7 @@
   "description": "querying bank statement",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/adrianndwiga/bank-statement.git",
