@@ -4,6 +4,8 @@
   "description": "querying bank statement",
   "main": "index.js",
   "scripts": {
+    "build": "tsc ./index.ts",
+    "start": "yarn lint && yarn build && node ./index.js",
     "lint": "eslint ./index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
