@@ -1,9 +1,13 @@
-const aNumber = {
-  id: 1,
-  name: 'some name',
+import { Transaction } from './types'
+
+const transaction = {
   description: 'some description',
-  decision: 'not determined'
+  date: new Date('17/01/2022'),
+  amount: 100.90
 }
 
+function getTransaction (): Transaction {
+  return transaction
+}
 // eslint-disable-next-line no-console
-console.log({ aNumber })
+console.log({ transaction: getTransaction() })
