@@ -7,7 +7,7 @@
     "build": "tsc ./index.ts",
     "start": "yarn lint && yarn build && node ./index.js",
     "lint": "eslint ./index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": "git+https://github.com/adrianndwiga/bank-statement.git",
   "author": "Adrian Ndwiga <adrian_ndwiga@hotmail.com>",
@@ -24,6 +24,7 @@
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-mocha": "^10.0.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "mocha": "^9.1.3",
