@@ -5,7 +5,8 @@
         "node": true
     },
     "extends": [
-        "standard"
+        "standard",
+        "plugin:mocha/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -19,6 +20,10 @@
     "rules": {
         "max-len": [2, 80, 4],
         "complexity": ["error", 2],
-        "no-console": "error"
+        "no-console": "error",
+        "mocha/additionalCustomNames": [
+            { "name": "describeModule", "type": "suite", "interfaces": [ "BDD" ] },
+            { "name": "testModule", "type": "testCase", "interfaces": [ "TDD" ] }
+        ]
     }
 }
